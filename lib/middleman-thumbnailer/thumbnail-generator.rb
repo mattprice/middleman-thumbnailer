@@ -13,7 +13,7 @@ module Middleman
         ext = file_parts.last
 
         dimensions.each do |name, dimension|
-          ret[name] = {name: "#{basename}-#{name}-#{dimension}.#{ext}", dimensions: dimension}
+          ret[name] = {name: "#{basename}.#{ext}", dimensions: dimension}
         end
 
         ret
